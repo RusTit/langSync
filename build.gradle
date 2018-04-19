@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "com.rustit.Main"
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies{
+    compile 'org.checkerframework:checker:2.1.12'
+}
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest.attributes("Main-Class": mainClassName);
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.6'
+} 
