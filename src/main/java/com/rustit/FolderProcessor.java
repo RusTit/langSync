@@ -51,7 +51,7 @@ class FolderProcessor {
     private LangFile template;
     private File[] langFiles;
 
-    static FolderProcessor[] getProcessorsByArgs(String[] args) {
+    public static FolderProcessor[] getProcessorsByArgs(String[] args) {
         List<FolderProcessor> list = new ArrayList<>();
         for (int index = 0; index < args.length; index++) {
             String arg = args[index].toLowerCase(Locale.ENGLISH);

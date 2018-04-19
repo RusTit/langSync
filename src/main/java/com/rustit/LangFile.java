@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.util.*;
 import java.util.regex.*;
 
-class LangFile {
+public class LangFile {
     private static final Pattern translationPatter = Pattern.compile("(.+)=(.+)");
 
     private List<Pair<String, String>> rows;
